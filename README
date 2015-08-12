@@ -1,0 +1,3 @@
+Forex Web
+
+Simple cuba web app that returns the exchange rate for a given date between 2 currencies. The information is read from a local file.
