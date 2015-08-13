@@ -8,6 +8,12 @@ Cuba.define do
       template = Tilt::ERBTemplate.new('templates/index.erb')
       res.write template.render { }
     end
+
+    on 'styles', extension('css') do |file|
+      res['Content-Type'] = 'text/css'
+      css = Tilt::ERBTemplate.new('styles/basic.css')
+      res.write css.render
+    end
   end
 
   on post do

@@ -1,0 +1,49 @@
+
+body {
+  margin-left: 100px;
+}
+
+h1 {
+  color: black;
+}
+
+.element {
+  margin-bottom: 15px;
+}
+
+input {
+  border: 1px solid black;
+}
+
+a {
+  display: inline-block;
+  width: 55px;
+  text-align: right;
+  margin-right: 8px;
+}
+
+select {
+  border: 0;
+  outline: 1px solid black;
+  background-color: white;
+  width: 150px;
+}
+
+.message {
+  width: 500px;
+  color: red;
+  text-align: left;
+}
+
+.amount {
+  float: left;
+}
+
+.currencies {
+  float: left;
+  margin-left: 20px;
+}
+
+.clear {
+  clear: both;
+}

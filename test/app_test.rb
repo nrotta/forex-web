@@ -18,6 +18,11 @@ scope do
     assert_equal last_response.status, 404
   end
 
+  test "that css is accesible" do
+    get "/styles/basic.css"
+    assert_equal last_response.status, 200
+  end
+
   test "post with complete information - GBP EUR" do
     post "/", { date: '2015-08-11', amount: 100, base: 'GBP', counter: 'EUR' }
     assert last_response.body.include?("GBP 100 = EUR 141.08 ON 2015-08-11")
