@@ -8,6 +8,12 @@ scope do
     assert_equal last_response.status, 200
   end
 
+  test "that today is the default value of the date field" do
+    get "/"
+    assert last_response.body.include?(Date.today.to_s)
+    assert_equal last_response.status, 200
+  end
+
   test "that a get to an nonexistent path throws a 404" do
     get "/nonexistant"
     assert_equal last_response.status, 404
